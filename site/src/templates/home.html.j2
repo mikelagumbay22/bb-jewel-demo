@@ -1,0 +1,64 @@
+{% extends "base.html.j2" %}
+{% from "partials/macros.html.j2" import icon, media, contact_buttons, review_button, rating_badge, gallery_card, necklace_scene, package_panel with context %}
+{% block content %}
+<section class="vhero" aria-labelledby="hero-title">
+  <div class="vhero__media">
+    <video class="vhero__video" data-hero-video muted playsinline loop preload="none" poster="img/video/hero-poster.webp" width="960" height="720" aria-hidden="true" tabindex="-1">
+      <source data-src="img/video/hero-loop.mp4" type="video/mp4">
+    </video>
+    <span class="image-badge vhero__badge">{{ c.meta.video_badge }}</span>
+    <button type="button" class="vhero__pause" data-video-toggle aria-pressed="false" hidden>{{ icon("pause") }}<span data-video-label>Pause video</span></button>
+  </div>
+  <div class="container vhero__copy">
+    <p class="eyebrow">Malton · Airport Rd · Mississauga</p>
+    <h1 id="hero-title">Gold jewellery <em>&amp;</em> piercing in Malton</h1>
+    <p class="lead">BB Jewel, also known as Bittu Bathinda, is a jewellery store and body piercing shop at 7050 Airport Rd, Mississauga.</p>
+    <div class="btn-row">
+      <a class="btn btn--gold btn--lg" href="tel:{{ b.phone_e164 }}">{{ icon("phone") }}Call {{ b.phone_display }}</a>
+      <a class="btn btn--ghost btn--lg" href="{{ page_href.collections }}">{{ icon("star") }}Collections</a>
+    </div>
+    {{ rating_badge() }}
+  </div>
+</section>
+
+{{ necklace_scene() }}
+
+<section class="section" aria-labelledby="col-title">
+  <div class="container">
+    <div class="section-head reveal"><p class="eyebrow">Collections</p><h2 id="col-title">Find your next favourite piece</h2></div>
+    <ul class="gallery">{% for it in collections["items"][:3] %}{{ gallery_card(it) }}{% endfor %}</ul>
+    <div class="btn-row center"><a class="btn btn--gold" href="{{ page_href.collections }}">{{ icon("star") }}See all collections</a></div>
+  </div>
+</section>
+
+<section class="section section--panel" aria-labelledby="pi-title">
+  <div class="container split">
+    <div class="reveal reveal-l photo-frame">{{ media(c.images.ear, "(min-width: 900px) 520px, 92vw", "media--wide") }}</div>
+    <div class="reveal reveal-r">
+      <p class="eyebrow">Body piercing</p>
+      <h2 id="pi-title">Ear and nose piercing</h2>
+      <p>Get pierced and choose your studs or nose pin in the same visit. Call to book or ask a question. Ask us about aftercare.</p>
+      <div class="btn-row"><a class="btn btn--gold" href="{{ page_href.piercing }}">{{ icon("ear") }}Piercing services</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="rev-title">
+  <div class="container split">
+    <div class="reveal reveal-l">
+      <p class="eyebrow">Reviews</p>
+      <h2 id="rev-title">Rated {{ b.rating }} by {{ b.review_count }} Google reviewers</h2>
+      {{ rating_badge() }}
+      <p class="note">{{ c.reviews.ph | ph }}</p>
+      <div class="btn-row">{{ review_button() }}</div>
+    </div>
+    <div class="reveal reveal-r visit-card">
+      <h2 class="h3">{{ icon("pin") }} Visit us</h2>
+      <p class="addr">{{ b.address.street }}<br>{{ b.address.city }}, {{ b.address.region }} {{ b.address.postal_code }}</p>
+      <p><strong>Hours:</strong> {{ c.hours_note | ph }}</p>
+      {{ contact_buttons() }}
+    </div>
+  </div>
+</section>
+{{ package_panel() }}
+{% endblock %}

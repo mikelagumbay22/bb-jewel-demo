@@ -1,0 +1,337 @@
+{
+  "_readme": "ALL business content for the BB Jewel (Bittu Bathinda) demo (Premium package sample). Facts ONLY from Chiefy's brief: address, phone, 4.7 on Google from 268 reviews, jewellery store + body piercing. No hours, prices, karat/purity claims, staff names, review quotes, health/sterilisation claims or e-mail.",
+  "meta": {
+    "lang": "en-CA",
+    "noindex": true,
+    "show_placeholder_badges": true,
+    "schema_include_rating": false,
+    "schema_image": "schema_logo",
+    "demo_banner": "Premium package demo concept — not an official website of BB Jewel, and not affiliated with or approved by the business.",
+    "copyright_line": "Demo concept, not affiliated with or approved by BB Jewel (Bittu Bathinda).",
+    "image_badge": "Illustrative image, not a photo of BB Jewel's pieces",
+    "_image_badge_note": "AI images, scroll layers and hero clip made with Higgsfield (GPT Image 2.5, Seedance 1.5 Pro, Oct 10, 2026).",
+    "theme_color": "#120A0D",
+    "site_url": "https://mikelagumbay22.github.io/bb-jewel-demo/",
+    "share": {
+      "suffix": "(demo concept)",
+      "site_name_template": "{name} {suffix}",
+      "description_template": "Demo concept website for {name}, {summary} — not the official site. {page_summary}",
+      "summary": "a jewellery store and body piercing shop in Malton, Mississauga",
+      "max_description": 160,
+      "title_suffix_in_tab": true
+    },
+    "social_image": {
+      "source_image": "bangles",
+      "output": "og-image.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "A stack of engraved gold bangles (illustrative image, not a photo of BB Jewel's pieces)",
+      "label": "Demo concept, not the official site",
+      "label_bg": "#120A0D",
+      "label_fg": "#E2BE6E",
+      "label_size": 52,
+      "label_band_height": 112,
+      "badge_size": 28,
+      "business_type": "jewellery store",
+      "badge": "Illustrative image, not a photo of BB Jewel's pieces",
+      "font": "../work/fonts/jost-500-latin.ttf",
+      "quality": 70
+    },
+    "image_max_kb": 150,
+    "video_badge": "Illustrative video, not footage of BB Jewel's pieces"
+  },
+  "export": {
+    "banned_words": [
+      "Quill",
+      "Canvas",
+      "Chiefy",
+      "Launch",
+      "Pixel",
+      "Grok",
+      "hotmail",
+      "gmail",
+      "Higgsfield"
+    ],
+    "banned_patterns": [
+      "mailto",
+      "[\\w.+-]+@[\\w-]+\\.[a-z]{2,}",
+      "aggregateRating",
+      "\\bstock (image|photo|photograph|footage|picture)",
+      "priceRange",
+      "paymentAccepted",
+      "\"review\"",
+      "\"email\"",
+      "\\$\\s?\\d",
+      "github\\.io(?![^<]*(\"|'))",
+      "since (19|20)\\d\\d",
+      "award",
+      "best in ",
+      "voted",
+      "#1 (in|rated|best)\\b",
+      "family[- ]owned",
+      "\\b(10|14|18|22|24)\\s?(k|kt|karat|carat)\\b",
+      "hallmark",
+      "certified",
+      "steril",
+      "hypoallergenic",
+      "licensed",
+      "pain[- ]?free",
+      "open (now|today|daily|7 days)",
+      "\\bfree\\b",
+      "warranty",
+      "guarantee"
+    ],
+    "never_publish": [],
+    "never_publish_globs": [],
+    "never_publish_dirs": [],
+    "required_text": [
+      "@demo_banner",
+      "Demo concept, not affiliated with or approved by BB Jewel (Bittu Bathinda)."
+    ],
+    "placeholder_banned_words": [
+      "builder",
+      "JSON",
+      "Chiefy",
+      "owner"
+    ],
+    "schema_forbidden_keys": [
+      "aggregateRating",
+      "review",
+      "email",
+      "url",
+      "priceRange",
+      "paymentAccepted",
+      "currenciesAccepted",
+      "makesOffer",
+      "amenityFeature",
+      "openingHoursSpecification"
+    ]
+  },
+  "business": {
+    "name": "BB Jewel",
+    "short_name": "BB Jewel",
+    "alt_name": "Bittu Bathinda",
+    "schema_type": [
+      "JewelryStore"
+    ],
+    "phone_display": "(905) 226-6566",
+    "phone_e164": "+19052266566",
+    "phone_schema": "+1-905-226-6566",
+    "address": {
+      "street": "7050 Airport Rd",
+      "unit": "",
+      "city": "Mississauga",
+      "region": "ON",
+      "postal_code": "L4T 2G8",
+      "country": "CA",
+      "full": "7050 Airport Rd, Mississauga, ON L4T 2G8"
+    },
+    "map_query": "BB Jewel, 7050 Airport Rd, Mississauga, ON L4T 2G8",
+    "reviews_url": "https://www.google.com/maps/search/?api=1&query=BB+Jewel+7050+Airport+Rd+Mississauga+ON",
+    "rating": "4.7",
+    "review_count": "268"
+  },
+  "brand_files": {
+    "logo": "logo.svg",
+    "favicon": "favicon.ico",
+    "favicon_png": "favicon-512.png",
+    "apple_touch_icon": "apple-touch-icon.png",
+    "schema_logo": "logo.png",
+    "_note": "Demo wordmark made for this concept (work/logo.py). Not the business's logo."
+  },
+  "pages": [
+    {
+      "id": "home",
+      "file": "index.html",
+      "template": "home.html.j2",
+      "nav_label": "Home",
+      "title": "BB Jewel (Bittu Bathinda) | Jewellery & Piercing in Malton, Mississauga",
+      "share_description": "Demo concept site: gold jewellery and ear and nose piercing at 7050 Airport Rd, Malton, Mississauga. Not the official site."
+    },
+    {
+      "id": "collections",
+      "file": "collections.html",
+      "template": "collections.html.j2",
+      "nav_label": "Collections",
+      "title": "Collections: Chains, Bangles, Rings & More | BB Jewel",
+      "share_description": "Demo concept site: gold chains, bangles, rings, earrings, nose pins and kids' jewellery at BB Jewel, Airport Rd, Mississauga."
+    },
+    {
+      "id": "piercing",
+      "file": "piercing.html",
+      "template": "piercing.html.j2",
+      "nav_label": "Piercing",
+      "title": "Ear & Nose Piercing in Mississauga | BB Jewel",
+      "share_description": "Demo concept site: ear and nose piercing at BB Jewel, 7050 Airport Rd, Malton, Mississauga. Call to book. Ask us about aftercare."
+    },
+    {
+      "id": "about",
+      "file": "about.html",
+      "template": "about.html.j2",
+      "nav_label": "About",
+      "title": "About BB Jewel (Bittu Bathinda) | Malton, Mississauga",
+      "share_description": "Demo concept site: BB Jewel, also known as Bittu Bathinda, is a jewellery store and piercing shop on Airport Rd in Malton, Mississauga."
+    },
+    {
+      "id": "visit",
+      "file": "visit.html",
+      "template": "visit.html.j2",
+      "nav_label": "Visit",
+      "title": "Visit Us: 7050 Airport Rd, Mississauga | BB Jewel",
+      "share_description": "Demo concept site: find BB Jewel at 7050 Airport Rd, Mississauga, ON L4T 2G8. Map, directions and phone (905) 226-6566."
+    },
+    {
+      "id": "guide",
+      "file": "admin-guide.html",
+      "template": "guide.html.j2",
+      "title": "How to update your gallery | BB Jewel",
+      "share_summary": "Owner guide to the gallery."
+    },
+    {
+      "id": "notfound",
+      "file": "404.html",
+      "template": "404.html.j2",
+      "title": "Page not found | BB Jewel",
+      "share_summary": "Page not found."
+    }
+  ],
+  "header_cta": {
+    "label": "Call us",
+    "href": "tel:+19052266566",
+    "icon": "phone"
+  },
+  "hours": [
+    {
+      "day": "Monday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Tuesday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Wednesday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Thursday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Friday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Saturday",
+      "tbc": true,
+      "display": "To confirm"
+    },
+    {
+      "day": "Sunday",
+      "tbc": true,
+      "display": "To confirm"
+    }
+  ],
+  "hours_note": "[PLACEHOLDER: opening hours]",
+  "images": {
+    "chains": {
+      "file": "chains.jpg",
+      "illustrative": true,
+      "focus": "50% 45%",
+      "alt": "Gold chains in different link styles on a velvet display"
+    },
+    "bangles": {
+      "file": "bangles.jpg",
+      "illustrative": true,
+      "focus": "50% 50%",
+      "alt": "A stack of engraved gold bangles on dark velvet"
+    },
+    "rings": {
+      "file": "rings.jpg",
+      "illustrative": true,
+      "focus": "50% 50%",
+      "alt": "A velvet tray of gold rings, some with small coloured stones"
+    },
+    "ear": {
+      "file": "ear.jpg",
+      "illustrative": true,
+      "focus": "60% 50%",
+      "alt": "An ear with small gold studs and a gold hoop, face not shown"
+    },
+    "nosepins": {
+      "file": "nosepins.jpg",
+      "illustrative": true,
+      "focus": "40% 55%",
+      "alt": "Small gold nose pins and studs laid out on a dark velvet pad"
+    }
+  },
+  "reviews": {
+    "rating": "4.7",
+    "count": "268",
+    "ph": "[PLACEHOLDER: reviews to confirm, quoted word for word with permission]",
+    "leave_label": "Leave us a Google review"
+  },
+  "package": {
+    "label": "Demo only",
+    "heading": "What the Premium package includes",
+    "intro": "This sample shows the extra features in the Premium package. This panel is for the demo and would not appear on a live site.",
+    "domain_line": "Your own web address, e.g. bbjewel.ca or bbjewel.com",
+    "domain_note": "Example addresses only. Not registered or owned by the business.",
+    "features": [
+      {
+        "n": "1",
+        "text": "A signature scroll effect: a necklace that assembles as you scroll"
+      },
+      {
+        "n": "2",
+        "text": "A looping hero video with a pause button"
+      },
+      {
+        "n": "3",
+        "text": "A Collections gallery you can update yourself (one simple file plus photos)"
+      },
+      {
+        "n": "4",
+        "text": "A piercing page with an appointment request form (disabled in this demo)"
+      },
+      {
+        "n": "5",
+        "text": "Google rating, review button, map and directions"
+      },
+      {
+        "n": "6",
+        "text": "Tap-to-call on every page"
+      },
+      {
+        "n": "7",
+        "text": "Your own web address, e.g. bbjewel.ca or bbjewel.com"
+      }
+    ]
+  },
+  "piercing": {
+    "services": [
+      {
+        "name": "Ear lobe piercing",
+        "desc": "Classic lobe piercing for one or both ears."
+      },
+      {
+        "name": "Upper ear piercing",
+        "desc": "Ask us which upper-ear placements we offer."
+      },
+      {
+        "name": "Nose piercing",
+        "desc": "Nose piercing, with nose pins to choose from in store."
+      },
+      {
+        "name": "Other piercings",
+        "desc": "Ask us what else we offer."
+      }
+    ],
+    "ph": "[PLACEHOLDER: piercing services, pricing and age policy]"
+  }
+}

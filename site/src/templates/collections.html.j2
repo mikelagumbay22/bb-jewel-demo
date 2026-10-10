@@ -1,0 +1,24 @@
+{% extends "base.html.j2" %}
+{% from "partials/macros.html.j2" import icon, gallery_card, contact_buttons with context %}
+{% block content %}
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container section-head">
+    <p class="eyebrow">Collections · Mississauga</p>
+    <h1 id="page-title">Collections</h1>
+    <p class="lead">Gold chains, bangles, rings, earrings, nose pins and kids' jewellery. Come in to see what's in store.</p>
+  </div>
+</section>
+<section class="section section--tight" aria-labelledby="gal-title">
+  <div class="container">
+    <aside class="premium-note reveal" aria-label="Premium feature (demo)">
+      <p><span class="pkg-label">Demo · Premium feature</span> <strong>{{ collections.note }}.</strong> This gallery is built from one simple file (<code>collections.json</code>) and a folder of photos. Add a photo, change a few words, and the new piece shows up here. No developer needed. <a href="admin-guide.html">How it works</a></p>
+    </aside>
+    <h2 id="gal-title" class="visually-hidden">Gallery</h2>
+    <ul class="gallery" data-gallery data-badge="{{ c.meta.image_badge }}">{% for it in collections["items"] %}{{ gallery_card(it) }}{% endfor %}</ul>
+    <p class="note">Categories shown as examples. Styles, details and availability: <mark class="ph-inline">To confirm</mark></p>
+  </div>
+</section>
+<section class="section section--panel" aria-labelledby="col-cta"><div class="container reveal center-text">
+  <h2 id="col-cta">Looking for something specific?</h2><p>Call us and ask what's in store.</p>{{ contact_buttons("center") }}
+</div></section>
+{% endblock %}

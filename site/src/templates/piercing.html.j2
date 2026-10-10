@@ -1,0 +1,35 @@
+{% extends "base.html.j2" %}
+{% from "partials/macros.html.j2" import icon, media, contact_buttons, disabled_note, appointment_form with context %}
+{% block content %}
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container section-head">
+    <p class="eyebrow">Body piercing · Malton, Mississauga</p>
+    <h1 id="page-title">Ear and nose piercing</h1>
+    <p class="lead">Get pierced at BB Jewel on Airport Rd, and choose your studs or nose pin while you're here.</p>
+    {{ contact_buttons() }}
+  </div>
+</section>
+<section class="section section--tight" aria-labelledby="svc-title">
+  <div class="container split">
+    <div>
+      <h2 id="svc-title">Services</h2>
+      <ul class="svc-list">
+        {%- for s in c.piercing.services %}
+        <li class="reveal" style="--d: {{ loop.index0 * 0.08 }}s">{{ icon("ear") }}<div><h3>{{ s.name }}</h3><p>{{ s.desc }}</p></div></li>
+        {%- endfor %}
+      </ul>
+      <p class="note">{{ c.piercing.ph | ph }}</p>
+      <p class="aftercare">{{ icon("review") }} <strong>Ask us about aftercare.</strong></p>
+    </div>
+    <div class="reveal reveal-r">
+      <div class="photo-frame">{{ media(c.images.nosepins, "(min-width: 900px) 520px, 92vw", "media--wide") }}</div>
+    </div>
+  </div>
+</section>
+<section class="section section--panel" id="book" aria-labelledby="appt-title">
+  <div class="container quote-grid">
+    <div class="reveal reveal-l"><h2 id="appt-title">Request a piercing appointment</h2>{{ disabled_note("appt-note") }}</div>
+    {{ appointment_form() }}
+  </div>
+</section>
+{% endblock %}

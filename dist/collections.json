@@ -1,0 +1,12 @@
+{
+  "_how_to_edit": "Owner-editable gallery. To add a piece: put a photo (about 800 px wide, 4:3, .webp or .jpg) in the img/collections/ folder, then copy one block below and change the words. The website reads this file every time someone opens the Collections page. See admin-guide.html.",
+  "note": "Premium feature: you can update this gallery yourself",
+  "items": [
+    {"id": "gold-chains", "category": "Gold chains", "title": "Gold chains", "details": "To confirm", "image": "img/collections/gold-chains-800.webp", "image_small": "img/collections/gold-chains-480.webp", "alt": "Gold chains in different link styles on a velvet display", "illustrative": true},
+    {"id": "bangles", "category": "Bangles", "title": "Bangles", "details": "To confirm", "image": "img/collections/bangles-800.webp", "image_small": "img/collections/bangles-480.webp", "alt": "A stack of engraved gold bangles on dark velvet", "illustrative": true},
+    {"id": "rings", "category": "Rings", "title": "Rings", "details": "To confirm", "image": "img/collections/rings-800.webp", "image_small": "img/collections/rings-480.webp", "alt": "A velvet tray of gold rings, some with small coloured stones", "illustrative": true},
+    {"id": "earrings", "category": "Earrings", "title": "Earrings", "details": "To confirm", "image": "img/collections/earrings-800.webp", "image_small": "img/collections/earrings-480.webp", "alt": "An ear wearing small gold studs and a gold hoop, face not shown", "illustrative": true},
+    {"id": "nose-pins", "category": "Nose pins", "title": "Nose pins", "details": "To confirm", "image": "img/collections/nose-pins-800.webp", "image_small": "img/collections/nose-pins-480.webp", "alt": "Small gold nose pins laid out on a dark velvet pad", "illustrative": true},
+    {"id": "kids", "category": "Kids' jewellery", "title": "Kids' jewellery", "details": "To confirm", "image": "img/collections/kids-800.webp", "image_small": "img/collections/kids-480.webp", "alt": "Small gold earrings suited to children, on dark velvet", "illustrative": true}
+  ]
+}

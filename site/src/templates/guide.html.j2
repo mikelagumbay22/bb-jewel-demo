@@ -1,0 +1,20 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<section class="section guide" aria-labelledby="page-title">
+  <div class="container narrow">
+    <p class="eyebrow">Gallery guide · Demo</p>
+    <h1 id="page-title">How to update your Collections gallery</h1>
+    <p class="lead">This page is for the store team. It is not linked in the menu.</p>
+    <ol class="guide-steps">
+      <li><strong>Take a photo</strong> of the piece. Landscape works best. Save it about 800 pixels wide.</li>
+      <li><strong>Add the photo</strong> to the <code>img/collections</code> folder of the website.</li>
+      <li><strong>Open <code>collections.json</code></strong>. Copy one block (from <code>{</code> to <code>}</code>) and paste it as a new block.</li>
+      <li><strong>Change the words:</strong> <code>title</code> (the name people see), <code>category</code>, <code>details</code>, <code>image</code> (the photo's file name) and <code>alt</code> (a short description for people who can't see the photo).</li>
+      <li><strong>Save.</strong> The Collections page reads the file each time it opens, so your new piece appears straight away.</li>
+    </ol>
+    <p>To remove a piece, delete its block. To change the order, move the blocks up or down.</p>
+    <p class="note">If you use real photos of your own pieces, set <code>"illustrative": false</code> so the "Illustrative image" badge goes away.</p>
+    <p><a class="btn btn--gold" href="{{ page_href.collections }}">Back to Collections</a></p>
+  </div>
+</section>
+{% endblock %}

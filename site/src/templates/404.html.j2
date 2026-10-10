@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+{% from "partials/macros.html.j2" import icon with context %}
+{% block content %}
+<section class="section nf" aria-labelledby="nf-title">
+  <div class="container">
+    <div class="nf-gem" aria-hidden="true"><svg viewBox="0 0 52 48" width="120" height="110"><path d="M8 18 18 6h16l10 12-18 26z" fill="none" stroke="var(--ok-gold)" stroke-width="1.6"/><path d="M8 18h36M18 6l8 12 8-12M26 18v26" fill="none" stroke="var(--ok-gold)" stroke-width="1"/></svg></div>
+    <p class="eyebrow">Page not found</p>
+    <h1 id="nf-title">This page has gone missing</h1>
+    <p class="lead">We couldn't find that page. Try one of these instead.</p>
+    <div class="btn-row center">
+      <a class="btn btn--gold" href="{{ page_href.home }}">{{ icon("home") }}Home</a>
+      <a class="btn btn--ghost" href="{{ page_href.collections }}">{{ icon("star") }}Collections</a>
+      <a class="btn btn--ghost" href="{{ page_href.visit }}">{{ icon("pin") }}Visit</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

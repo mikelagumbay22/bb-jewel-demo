@@ -1,0 +1,16 @@
+/* THEME: BB Jewel demo (Premium). Velvet burgundy, warm gold and ivory on deep plum-black.
+   Contrast: Ivory #F8F1E4 on #120A0D 17.5 · Muted #CFC0AE on #1E1216 10.6 · Gold #E2BE6E on #120A0D 10.4 · Dark text #120A0D on gold 10.4. */
+@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/cormorantgaramond-600-latin.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 500; font-display: swap; src: url("../fonts/cormorantgaramond-500i-latin.woff2") format("woff2"); }
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/jost-400-latin.woff2") format("woff2"); }
+@font-face { font-family: "Jost"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("../fonts/jost-500-latin.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Fallback"; font-weight: 100 900; src: local("Times New Roman Bold"), local("TimesNewRomanPS-BoldMT"), local("Liberation Serif Bold"), local("LiberationSerif-Bold"), local("Tinos Bold"); size-adjust: 91.3%; ascent-override: 101.2%; descent-override: 31.4%; line-gap-override: 0%; }
+:root {
+  --ok-black: #120A0D; --ok-ink: #170D11; --ok-surface: #1E1216; --ok-surface-2: #2A1A20; --ok-line: #43303A;
+  --ok-text: #F8F1E4; --ok-muted: #CFC0AE; --ok-yellow: #E2BE6E; --ok-gold: #E2BE6E; --ok-gold-lt: #F4DFA8; --ok-gold-dk: #9C7A35; --ok-brown: #43303A;
+  --ok-red: #6E1A2C; --ok-red-hi: #E2BE6E; --ok-red-dk: #4A0F1D; --ok-coral: #E9A8B4;
+  --font-display: "Cormorant Garamond", "Cormorant Fallback", Georgia, serif;
+  --font-body: "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --container: 74rem; --radius: 4px; --radius-lg: 10px;
+  --ease-out: cubic-bezier(.22, 1, .36, 1); --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+}

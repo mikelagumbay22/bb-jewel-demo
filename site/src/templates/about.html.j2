@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+{% from "partials/macros.html.j2" import icon, media, contact_buttons, rating_badge with context %}
+{% block content %}
+<section class="page-hero" aria-labelledby="page-title">
+  <div class="container section-head">
+    <p class="eyebrow">About</p>
+    <h1 id="page-title">BB Jewel, also known as Bittu Bathinda</h1>
+    <p class="lead">A jewellery store and body piercing shop at 7050 Airport Rd in Malton, Mississauga.</p>
+    {{ rating_badge() }}
+  </div>
+</section>
+<section class="section section--tight" aria-labelledby="ab-title">
+  <div class="container split">
+    <div class="reveal reveal-l">
+      <h2 id="ab-title">What you'll find here</h2>
+      <ul class="tick-list">
+        <li>Gold chains, bangles and rings</li><li>Earrings and nose pins</li><li>Kids' jewellery</li><li>Ear and nose piercing</li>
+      </ul>
+      <p class="note">{{ "[PLACEHOLDER: the store's story, in your own words]" | ph }}</p>
+      {{ contact_buttons() }}
+    </div>
+    <div class="reveal reveal-r photo-frame">{{ media(c.images.chains, "(min-width: 900px) 520px, 92vw", "media--wide") }}</div>
+  </div>
+</section>
+{% endblock %}
